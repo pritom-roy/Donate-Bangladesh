@@ -1,4 +1,3 @@
-const myMoneyElement = get('myMoney');
 const home = get('home');
 console.log(home);
 

@@ -67,7 +67,12 @@ btnDonateNow1.addEventListener('click', function (event) {
         modal.showModal();
 
         const he = makeHistoryContent(donatedAmount, head1);
-        historyContent.appendChild(he);
+
+        const lastElement = historyContent.firstChild;
+        if (lastElement) historyContent.insertBefore(he, lastElement);
+        else historyContent.appendChild(he);
+
+
 
         // updateBalance(-donatedAmount)
     }
@@ -93,7 +98,9 @@ btnDonateNow2.addEventListener('click', function (event) {
         modal.showModal();
 
         const he = makeHistoryContent(donatedAmount, head2);
-        historyContent.appendChild(he);
+        const lastElement = historyContent.firstChild;
+        if (lastElement) historyContent.insertBefore(he, lastElement);
+        else historyContent.appendChild(he);
 
         // updateBalance(-donatedAmount)
     }
@@ -119,7 +126,9 @@ btnDonateNow3.addEventListener('click', function (event) {
         modal.showModal();
 
         const he = makeHistoryContent(donatedAmount, head3);
-        historyContent.appendChild(he);
+        const lastElement = historyContent.firstChild;
+        if (lastElement) historyContent.insertBefore(he, lastElement);
+        else historyContent.appendChild(he);
 
         // updateBalance(-donatedAmount)
     }

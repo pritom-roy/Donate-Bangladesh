@@ -50,7 +50,7 @@ donate.addEventListener('click', function () {
     historySection.classList.add("hidden");
 });
 
-let money = parseFloat(myMoney.innerText);
+let money = parseFloat(myMoney.innerText) || 1000000;
 
 btnDonateNow1.addEventListener('click', function (event) {
     event.preventDefault();

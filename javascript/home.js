@@ -31,7 +31,7 @@ const modal = get('my_modal_5');
 //     myMoney.innerText = storedBalance;
 // }
 
-localStorage.setItem('balance', parseFloat(myMoney.innerText));
+// localStorage.setItem('balance', parseFloat(myMoney.innerText));
 
 history.addEventListener('click', function () {
     history.classList.add("bg-[#B4F461]", "font-bold");

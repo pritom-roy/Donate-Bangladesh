@@ -26,10 +26,10 @@ const blogs = get('blogs');
 
 const modal = get('my_modal_5');
 
-let storedBalance = localStorage.getItem('balance');
-if (storedBalance) {
-    myMoney.innerText = storedBalance;
-}
+// let storedBalance = localStorage.getItem('balance');
+// if (storedBalance) {
+//     myMoney.innerText = storedBalance;
+// }
 
 localStorage.setItem('balance', parseFloat(myMoney.innerText));
 
@@ -69,7 +69,7 @@ btnDonateNow1.addEventListener('click', function (event) {
         const he = makeHistoryContent(donatedAmount, head1);
         historyContent.appendChild(he);
 
-        updateBalance(-donatedAmount)
+        // updateBalance(-donatedAmount)
     }
     else {
         alert(result);
@@ -95,7 +95,7 @@ btnDonateNow2.addEventListener('click', function (event) {
         const he = makeHistoryContent(donatedAmount, head2);
         historyContent.appendChild(he);
 
-        updateBalance(-donatedAmount)
+        // updateBalance(-donatedAmount)
     }
     else {
         alert(result);
@@ -121,7 +121,7 @@ btnDonateNow3.addEventListener('click', function (event) {
         const he = makeHistoryContent(donatedAmount, head3);
         historyContent.appendChild(he);
 
-        updateBalance(-donatedAmount)
+        // updateBalance(-donatedAmount)
     }
     else {
         alert(result);

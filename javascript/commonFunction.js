@@ -21,3 +21,9 @@ function makeHistoryContent(donatedAmount, head) {
         `
     return historyItem;
 }
+
+function updateBalance(amount) {
+    money += amount;
+    myMoney.innerText = money;
+    localStorage.setItem('balance', money);
+}

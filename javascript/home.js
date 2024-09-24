@@ -22,7 +22,16 @@ const head1 = get('head1');
 const head2 = get('head2');
 const head3 = get('head3');
 
+const blogs = get('blogs');
+
 const modal = get('my_modal_5');
+
+let storedBalance = localStorage.getItem('balance');
+if (storedBalance) {
+    myMoney.innerText = storedBalance;
+}
+
+localStorage.setItem('balance', parseFloat(myMoney.innerText));
 
 history.addEventListener('click', function () {
     history.classList.add("bg-[#B4F461]", "font-bold");
@@ -59,6 +68,8 @@ btnDonateNow1.addEventListener('click', function (event) {
 
         const he = makeHistoryContent(donatedAmount, head1);
         historyContent.appendChild(he);
+
+        updateBalance(-donatedAmount)
     }
     else {
         alert(result);
@@ -83,6 +94,8 @@ btnDonateNow2.addEventListener('click', function (event) {
 
         const he = makeHistoryContent(donatedAmount, head2);
         historyContent.appendChild(he);
+
+        updateBalance(-donatedAmount)
     }
     else {
         alert(result);
@@ -107,6 +120,8 @@ btnDonateNow3.addEventListener('click', function (event) {
 
         const he = makeHistoryContent(donatedAmount, head3);
         historyContent.appendChild(he);
+
+        updateBalance(-donatedAmount)
     }
     else {
         alert(result);
@@ -115,7 +130,9 @@ btnDonateNow3.addEventListener('click', function (event) {
     amount3.focus();
 })
 
+blogs.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.location.href = "blog.html";
+})
 
-// btnDonateNow1.addEventListener('click', function () {
-//     modal.showModal();
-// });
+

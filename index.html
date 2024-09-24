@@ -14,11 +14,11 @@
 
 <body class="">
     <header class="mb-3 sticky top-0 z-1 backdrop-blur-md">
-        <div class="bg-orange-100/80">
+        <div class="bg-orange-100/50">
             <nav
                 class="flex md:flex-row justify-center items-center md:justify-between flex-wrap w-11/12 md:w-10/12 mx-auto py-2 md:py-5">
                 <div class="md:order-1 order-2">
-                    <button class="btn md:text-xl ml-5 md:ml-0 bg-[#B4F461] ">Blogs</button>
+                    <button id="blogs" class="btn md:text-xl ml-5 md:ml-0 bg-[#B4F461] ">Blogs</button>
                 </div>
                 <div class="flex items-center md:order-1 order-1">
                     <img src="images/logo.png" alt="logo" class="md:h-12 w-12">
@@ -27,7 +27,7 @@
                 <div class="flex items-center md:order-1 order-3 md:mt-0 mt-3">
                     <h1 class="md:hidden ml-1 font-[500] mr-1">Current Balance: </h1>
                     <img src="images/coin.png" alt="logo" class="h-7 w-7">
-                    <h1 id="myMoney" class="md:text-xl font-semibold ml-1">5500</h1>
+                    <h1 id="myMoney" class="md:text-xl font-semibold ml-1">1000000</h1>
                     <p class="md:text-xl ml-1 font-[500]">BDT</p>
                 </div>
             </nav>
@@ -137,20 +137,6 @@
             </div>
         </section>
 
-
-        <!-- <div id="popup"
-            class="bg-white rounded-2xl h-52 w-80 border text-center fixed inset-x-1/4 inset-y-1/2 items-center justify-center z-50">
-            <div class="flex flex-col items-center">
-                <h1 class="text-xl md:text-4xl font-bold">Congratulations!</h1>
-                <div class="flex justify-center">
-                    <img src="images/coin.png" alt="coin" class="h-12 md:h-24">
-                </div>
-                <h2 class="text-sm md:text-base mt-5">You Have Donated For Humankind</h2>
-                <h2 class="text-base md:text-3xl font-bold mb-6">Successfully</h2>
-                <button id="btn-close-now" class="btn">Close Confirmation</button>
-            </div>
-        </div> -->
-        <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box text-center">
 
@@ -174,6 +160,7 @@
     <!-- Js files -->
     <script src="javascript/commonFunction.js"></script>
     <script src="javascript/home.js"></script>
+    <script src="javascript/blog.js"></script>
 </body>
 
 </html>
